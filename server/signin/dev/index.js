@@ -1,0 +1,4 @@
+{
+	pages:["signinIndex"],
+	root:"signinIndex"
+}

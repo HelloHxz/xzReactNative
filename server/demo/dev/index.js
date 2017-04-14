@@ -1,0 +1,9 @@
+{ 
+	"pages":
+		["app","drawlayout",
+				"goodsDetail","home",
+				"listviewDemo","my",
+				"segmentDemo","setting",
+				"commonlistpage","loadingDemo"],
+	"root":""
+}

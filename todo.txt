@@ -1,0 +1,81 @@
+
+重点!!!：去除Redux 不使用Redux 状态有框架自己实现
+
+1. 实现poplayer 参照https://github.com/maxs15/react-native-modalbox/blob/master/index.js
+2. 实现数据加载 实现loading 参照 https://github.com/Yenole/react-native-easy-loading
+3. 优化传参数机制
+4. 集成 https://github.com/oblador/react-native-lightbox
+5. 集成 https://github.com/jeanregisser/react-native-popover
+6. 集成 https://github.com/airbnb/lottie-react-native
+7. 集成 https://github.com/beefe/react-native-popup 
+8. 使用原生封装listview https://github.com/aksonov/react-native-tableview
+   android 需要自定义封装原生 https://github.com/liaohuqiu/android-cube-app
+   需要支持 stick header 以及section group ，siwper row  pullrefresh pushloadmore
+
+9. android 上注意虚拟回退按钮的处理 http://bbs.reactnative.cn/topic/480/%E5%AE%89%E5%8D%93back%E9%94%AE%E7%9A%84%E5%A4%84%E7%90%86-%E5%9F%BA%E6%9C%AC-%E9%AB%98%E7%BA%A7%E7%AF%87
+
+
+10. 实现Toast 配合 https://github.com/magicismight/react-native-root-siblings
+https://github.com/magicismight/react-native-root-toast
+
+
+11. 内存优化 看是否可以将不使用的页面的内存释放
+
+12.集成 https://github.com/react-native-community/react-native-blur  毛玻璃效果
+
+13. 制作NPM包
+
+14. 实现statusView
+
+15. 丰富插件事件机制 _init
+
+16. 实现setBadge 
+
+17.repeat 实现header footer  实现数据操作
+
+18. Fetch timeout https://github.com/github/fetch/issues/175  http://codecloud.net/20957.html
+
+19. image preload lazayload
+
+
+
+
+
+
+
+BUG：
+IOS scrollView 设置flex：1的时候滚动会被遮住 可以通过设置ios_paddingBottom进行处理
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Clear watchman watches: `watchman watch-del-all`.
+  2. Delete the `node_modules` folder: `rm -rf node_modules && npm install`.
+  3. Reset packager cache: `rm -fr $TMPDIR/react-*` or `npm start -- --reset-cache`.
+
+
+解决 Android gradle-2.4-all.zip下载过慢
+
+网上下好gradle-2.4-all.zip
+放在/android/gradle/wrapper下
+修改gradle-wrapper.jar
+distributionUrl=./gradle-2.4-all.zip
+
+

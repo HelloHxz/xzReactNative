@@ -1,0 +1,145 @@
+{
+  type:"pageview",
+  root:["header","body"],
+  style:{"backgroundColor":"#f0f3f4"},
+  components:{
+     header: {
+            type: "header",
+            root: [
+                "headertitle"
+            ],
+            style: {
+                height: 52,
+                justifyContent: "center",
+                alignItems: "center",
+                backgroundColor: "rgb(18,181,242)"
+            }
+        },
+        headertitle:{
+          type:"text",
+          text:"设置",
+          style:{
+            fontSize:18,
+            color:"#fff"
+          }
+        },
+        body:{
+          type:"view",
+          style:{
+            flex:1,
+            flexDirection:"column",
+            overflow:"auto",
+          },
+          root:["top_repeat","bottom_repeat"]
+        },
+       
+        bottom_repeat:{
+          type:"repeat",
+          root:["bottom_repeat_lefticon","bottom_repeat_righticon"],
+          items:[{icon:"icofont_eb8f",label:"游戏",color:"green"},
+          {icon:"icofont_eb8e",label:"日迹",color:"orange"},
+          {icon:"icofont_eb8d",label:"看点",color:"red"},
+          {icon:"icofont_eb90",label:"京东购物",color:"green"},
+          {icon:"icofont_eb94",label:"动漫",color:"blue"},
+          {icon:"icofont_eb93",label:"音乐",color:"red"},
+          {icon:"icofont_eb91",label:"NOW直播",color:"green"},
+          {icon:"icofont_eb98",label:"运动",color:"red"},
+          {icon:"icofont_eb96",label:"小程序",color:"orange"}],
+          style:{
+            backgroundColor:"#fff",
+            marginTop:12,
+            borderTopWidth:1,
+            borderBottomWidth:1,
+            borderColor:"#eee",
+          },
+          separateStyle:{
+            height:1,
+            backgroundColor:"#f2f3f4",
+            marginLeft:50
+          },
+          separateAreaStyle:{
+            height:15,
+            borderTopWidth:1,
+            borderBottomWidth:1,
+            borderColor:"#eee",
+            backgroundColor:"#f2f3f4"
+          },
+          separateAreaIndex:[7],
+           itemStyle:{
+            flexDirection:"row",
+            height:50,
+            justifyContent:"center",
+            backgroundColor:"#fff"
+          },
+        },
+        bottom_repeat_righticon:{
+          type:"icon",
+          icon:"icofont_eb8b",
+          style:{
+            width:30
+          },
+          iconStyle:{
+            color:"#333",
+            fontSize:21
+          }
+        },
+        bottom_repeat_lefticon:{
+          type:"icon",
+          icon_bind:"icon",
+          style:{
+            flex:1,
+            justifyContent:"flex-start",
+            marginLeft:20
+          },
+          iconStyle:{
+            fontSize:21
+          },
+          iconStyle_bind:{
+            color:"color"
+          },
+          textStyle:{
+            marginLeft:10,
+            fontSize:13
+          },
+          text_bind:"label",
+          textPos:"right"
+        },
+        top_repeat:{
+          type:"repeat",
+          itemStyle:{
+            flex:1
+          },
+          style:{
+            height:90,
+            borderBottomWidth:1,
+            borderColor:"#eee",
+            backgroundColor:"#fff",
+            alignItems:"center",
+            flexDirection:"row"
+          },
+          items:[{label:"好友动态",icon:"icofont_f024",color:"green"},
+              {label:"附近",icon:"icofont_ed7e",color:"red"},{label:"兴趣部落",icon:"icofont_f0c0",color:"orange"}],
+          root:["top_repeat_icon"]
+        },
+        top_repeat_icon:{
+          type:"icon",
+          icon_bind:"icon",
+          style:{
+          },
+          iconStyle_bind:{
+            color:"color"
+          },
+          iconStyle:{
+            fontSize:28
+          },
+          textStyle:{
+            marginTop:6,
+            fontSize:12
+          },
+          text_bind:"label",
+          textPos:"bottom"
+        }
+       
+  
+  }
+}

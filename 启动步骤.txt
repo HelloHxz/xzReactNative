@@ -1,0 +1,3 @@
+1.npm start 来启动web服务
+
+2.到XzReactNative下找到IOS  使用xcode打开启动
